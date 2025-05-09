@@ -1,0 +1,100 @@
+.discordPage {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  color: #f0f0f0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.title {
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: gold;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid gold;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(255, 215, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.discordLogo {
+  display: block;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  white-space: pre-line;
+}
+
+.description strong {
+  color: #ffd700;
+}
+
+.description a {
+  color: #ffd700;
+  text-decoration: underline;
+}
+
+.bannerImage {
+  width: 100%;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+}
+
+.joinBtn {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.75rem 2rem;
+  background: linear-gradient(135deg, #ffd700, #ff9900);
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.5);
+}
+
+.joinBtn:hover {
+  background: linear-gradient(135deg, #ffea00, #ffcc00);
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
