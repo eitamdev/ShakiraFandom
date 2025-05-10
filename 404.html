@@ -1,21 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <title>Redirect…</title>
-    <meta http-equiv="refresh" content="0; url=/" />
-    <script>
-      // Nom du repo GitHub Pages
-      const repo = "/ShakiraFandom";
-
-      // Récupère l'URL demandée après /ShakiraFandom
-      const path = location.pathname.replace(repo, "");
-      const search = location.search;
-      const hash = location.hash;
-
-      // Redirige vers l'URL avec un # pour que React s'en occupe
-      location.replace(`${repo}/#${path}${search}${hash}`);
-    </script>
+    <link rel="icon" href="/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shakira Fandom</title>
   </head>
-  <body></body>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
