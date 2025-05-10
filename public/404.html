@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="refresh" content="0;url=/ShakiraFandom/" />
+    <meta charset="utf-8">
     <title>Redirection…</title>
+    <script type="text/javascript">
+      // Récupère le chemin après /ShakiraFandom/
+      const path = location.pathname.replace(/^\/ShakiraFandom/, '');
+      const query = location.search || '';
+      const hash = location.hash || '';
+      location.replace('/ShakiraFandom/index.html?redirect=' + path + query + hash);
+    </script>
   </head>
   <body>
-    <p>Redirection vers <a href="/ShakiraFandom/">ShakiraFandom</a>…</p>
-    <script>
-      const redirect = window.location.pathname.replace(
-        /^\/ShakiraFandom(\/.*)?$/,
-        '/ShakiraFandom/index.html'
-      );
-      window.location.replace(redirect + window.location.search + window.location.hash);
-    </script>
+    <p>Redirection en cours…</p>
   </body>
 </html>
