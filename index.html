@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+    <!-- Meta tags pour SEO et compatibilité -->
     <meta charset="UTF-8" />
-    <link rel="icon" href="/favicon.ico" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Explorez le fandom de Shakira avec des cartes interactives, la discographie et plus encore." />
+    
+    <!-- Titre du site -->
     <title>Shakira Fandom</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" />
+    
+    <!-- Polices Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Préchargement de la police pour un rendu plus rapide -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" as="style" />
+    
+    <!-- Meta tags pour améliorer l'affichage sur les réseaux sociaux -->
+    <meta property="og:title" content="Shakira Fandom" />
+    <meta property="og:description" content="Explorez le fandom de Shakira avec des cartes interactives, la discographie et plus encore." />
+    <meta property="og:image" content="/path/to/your/og-image.jpg" />
+    <meta property="og:url" content="https://eitamdev.github.io/ShakiraFandom/" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Shakira Fandom" />
+    <meta name="twitter:description" content="Explorez le fandom de Shakira avec des cartes interactives, la discographie et plus encore." />
+    <meta name="twitter:image" content="/path/to/your/twitter-image.jpg" />
   </head>
+  
   <body>
     <div id="root"></div>
-    <!-- Ici, on utilise le chemin relatif à partir du dossier où ton projet sera déployé -->
-    <script type="module" src="./src/main.jsx"></script>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
