@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { HashRouter } from 'react-router-dom'; // Utilise HashRouter pour GitHub Pages
+import { BrowserRouter } from 'react-router-dom';  // Importation de BrowserRouter
 import App from './App';
 import './App.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <HashRouter>
+  <BrowserRouter basename="/ShakiraFandom">  {/* Utilisation de BrowserRouter avec basename */}
     <App />
-  </HashRouter>
+  </BrowserRouter>
 );
