@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirect…</title>
+    <meta http-equiv="refresh" content="0; url=/" />
+    <script>
+      // Nom du repo GitHub Pages
+      const repo = "/ShakiraFandom";
+
+      // Récupère l'URL demandée après /ShakiraFandom
+      const path = location.pathname.replace(repo, "");
+      const search = location.search;
+      const hash = location.hash;
+
+      // Redirige vers l'URL avec un # pour que React s'en occupe
+      location.replace(`${repo}/#${path}${search}${hash}`);
+    </script>
+  </head>
+  <body></body>
+</html>
